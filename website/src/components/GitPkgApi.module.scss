@@ -1,0 +1,29 @@
+@use "../css/_vars";
+
+.container {
+  max-width: 40em;
+  margin: 1em auto;
+  font-size: 16px;
+
+  * {
+    transition: vars.$trans;
+  }
+
+  &.preview {
+    > :not(.inputContainer) {
+      &,
+      & * {
+        color: lightgrey;
+      }
+    }
+  }
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+
+  .mainInput {
+    flex: 1 1 auto;
+  }
+}

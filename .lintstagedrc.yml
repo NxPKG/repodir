@@ -1,0 +1,2 @@
+"*.{md,html,css,yml,yaml,json}": "prettier --write"
+"*.{js,ts}": "npm run lint"
